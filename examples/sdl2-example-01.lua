@@ -31,16 +31,7 @@ function shutdown()
     return 0
 end
 
-local running = true
-local whChanged = true
 function update()
-
-    if whChanged then
-        bgfx.bgfx_reset( m_width, m_height, m_reset )
-        bgfx.bgfx_set_view_rect(0,0,0, m_width, m_height)
-        _M.m4orthoMS(projMtx, 0, m_width, m_height, 0, 0, 2)
-        whChanged = false
-    end
     
     bgfx.bgfx_set_view_seq(0, true)
     bgfx.bgfx_set_view_transform(0, viewMtx, projMtx)
