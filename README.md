@@ -1,4 +1,4 @@
-luvit-bgfx
+#luvit-bgfx
 
 The project is a combination of the brilliant luvit project with the renderer bgfx.
 Individual projects can be found here:
@@ -11,8 +11,9 @@ nanovg - https://github.com/memononen/nanovg
 
 Bindings for luvit (lujit ffi internally) are provided to directly execute bgfx methods from lua script.
 
+##Hello World Example
 For example bgfx hello world becomes:
------------------------------------------------------------------------------------
+```
 local ffi = require('ffi')
 
 -- Setup the SDL Window and it returns a bgfx handle to use
@@ -83,14 +84,12 @@ end
 timer = require('timer')
 init()
 sdltimer = timer.setInterval(20, update)
+```
 
------------------------------------------------------------------------------------
-
-Running Examples:
+##Executing Examples:
 Open in console and run the following command.
-
+```
 .\bin\luvit.exe .\run_example.lua sdl2-example-01.lua
 or
 .\bin\luvit.exe .\run_example.lua glfw-example-01.lua
-
------------------------------------------------------------------------------------
+```
