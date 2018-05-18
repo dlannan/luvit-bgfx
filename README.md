@@ -90,6 +90,8 @@ sdltimer = timer.setInterval(20, update)
 Open in console and run the following command.
 ```
 .\bin\luvit.exe .\run_example.lua sdl2-example-01.lua
+```
 or
+```
 .\bin\luvit.exe .\run_example.lua glfw-example-01.lua
 ```
