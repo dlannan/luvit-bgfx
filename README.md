@@ -11,6 +11,8 @@ nanovg - https://github.com/memononen/nanovg
 
 Bindings for luvit (lujit ffi internally) are provided to directly execute bgfx methods from lua script.
 
+![Alt text](screenshots/glfw-example01.png?raw=true "GLFW Example01")
+
 ## Hello World Example
 For example bgfx hello world becomes:
 ```
